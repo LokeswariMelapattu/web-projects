@@ -1,3 +1,6 @@
+# New Note SPA Version
+
+```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -12,3 +15,4 @@ sequenceDiagram
     deactivate server
 
     Note right of browser: The new note is added to the page dynamically using JavaScript
+```
