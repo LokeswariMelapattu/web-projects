@@ -76,7 +76,7 @@ const App = () =>
         {
           handleNotification(false, `Added ${newName}`)
           console.log('Added:', response)
-          setPersons(persons.concat(newPerson))
+          setPersons(persons.concat(response))
         })
         .catch(error =>
         {
