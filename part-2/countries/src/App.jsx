@@ -14,7 +14,7 @@ const App = () =>
 
   const fetchWeather = (country) =>
   {
-    const api_key = "df0c3788ffbf0d5ef4d972a3f14eef8c"
+    const api_key = import.meta.env.VITE_WEATHER_API_KEY
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${country.capital[0]}&appid=${api_key}&units=metric`
     axios
       .get(url)
