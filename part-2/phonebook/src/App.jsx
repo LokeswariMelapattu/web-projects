@@ -3,20 +3,9 @@ import Persons from './components/Persons.jsx'
 import Filter from './components/Filter.jsx'
 import PersonAdd from './components/PersonAdd.jsx'
 import phoneService from './services/phonebook'
+import Notification from './components/Notification.jsx'
 import './index.css'
 
-const Notification = ({ isError, message }) =>
-{
-  if (message === null)
-  {
-    return null
-  }
-  return (
-    <div className={isError ? 'error' : 'success'}>
-      {message}
-    </div>
-  )
-}
 
 const App = () =>
 {
