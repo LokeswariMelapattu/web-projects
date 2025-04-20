@@ -28,6 +28,9 @@ const App = () =>
   const [errorMessage, setErrorMessage] = useState(null)
   const [isError, setIsError] = useState(false)
 
+  const handleNameChange = (event) => setNewName(event.target.value)
+  const handleNumberChange = (event) => setNewNumber(event.target.value)
+  const handleFilterChange = (event) => setFilter(event.target.value)
 
   // Handle error message
   const handleNotification = (isError, message) =>
@@ -39,23 +42,6 @@ const App = () =>
       setErrorMessage(null)
     }
       , 5000)
-  }
-  // Handle name change
-  const handleNameChange = (event) =>
-  {
-    setNewName(event.target.value)
-  }
-
-  // Handle number change
-  const handleNumberChange = (event) =>
-  {
-    setNewNumber(event.target.value)
-  }
-
-  // Handle filter change
-  const handleFilterChange = (event) =>
-  {
-    setFilter(event.target.value)
   }
 
   // Handle form submission
